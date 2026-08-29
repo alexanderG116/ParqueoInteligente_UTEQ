@@ -9,7 +9,7 @@ los puestos de parqueo y el historial de registros de estacionamiento.
 
 > Asignatura: Aplicaciones Telemáticas Basadas en la Web — UTEQ
 
-![Vehículos y propietarios](docs/vehiculos-propietarios.png)
+![Vehículos y propietarios](docs/listado-vehiculos.png.jpeg)
 
 ## Funcionalidades
 
@@ -44,11 +44,7 @@ fecha/hora de entrada, fecha/hora de salida, duración en minutos y estado.
 
 | Vehículos y propietarios | Puestos | Registros de estacionamiento |
 |---|---|---|
-| ![Vehículos](docs/vehiculos-propietarios.png) | ![Puestos](docs/puestos.png) | ![Registros](docs/registros-estacionamiento.png) |
-
-| Agregar | Editar | Eliminar |
-|---|---|---|
-| ![Agregar](docs/formulario-agregar.png) | ![Editar](docs/formulario-editar.png) | ![Eliminar](docs/confirmar-eliminar.png) |
+| ![Vehículos](docs/listado-vehiculos.png.jpeg) | ![Puestos](docs/listado-puestos.png.jpeg) | ![Registros](docs/listado-registros.jpeg) |
 
 ## Estructura del proyecto
 
@@ -83,7 +79,7 @@ npm install
 npm start
 \`\`\`
 
-Abre \`http://localhost:5173/#/parqueadero/vehiculos\`.
+Abre \`http://localhost:3000/#/parqueadero/vehiculos\`.
 
 ## Variables de entorno
 
@@ -94,4 +90,4 @@ VITE_SUPABASE_PUBLISHABLE_KEY=sb_publishable_tu_clave
 
 ## Repositorio
 
-[Enlace al repositorio en GitHub](https://github.com/kuroko16yt-beep/SmartParkingUTEQ)
+[Enlace al repositorio en GitHub](https://github.com/alexanderG116/ParqueoInteligente_UTEQ.git)
