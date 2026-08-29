@@ -44,7 +44,7 @@ fecha/hora de entrada, fecha/hora de salida, duración en minutos y estado.
 
 | Vehículos y propietarios | Puestos | Registros de estacionamiento |
 |---|---|---|
-| ![Vehículos](docs/listado-vehiculos.png.jpeg) | ![Puestos](docs/listado-puestos.png.jpeg) | ![Registros](docs/listado-registros.jpeg) |
+| ![Vehículos](docs/listado-puestos.png.jpeg) | ![Puestos](docs/listado-vehiculos.png.jpeg) | ![Registros](docs/listado-registros.jpeg) |
 
 ## Estructura del proyecto
 
