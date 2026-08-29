@@ -1,4 +1,4 @@
-# Smart Parking UTEQ — CRUD de Vehículos, Puestos y Registros
+# PARQUEO INTELIGENTE UTEQ — CRUD de Vehículos, Puestos y Registros
 
 Consola administrativa construida con **React + Vite**, **CoreUI** y **Supabase**
 para el caso de estudio *UTEQ Smart Parking*.
@@ -9,31 +9,42 @@ los puestos de parqueo y el historial de registros de estacionamiento.
 
 > Asignatura: Aplicaciones Telemáticas Basadas en la Web — UTEQ
 
-![Listado de vehículos y propietarios](docs/listado-vehiculos.png)
+![Vehículos y propietarios](docs/vehiculos-propietarios.png)
 
 ## Funcionalidades
 
 ### Vehículos y propietarios
-- Listado con búsqueda por placa, marca, modelo, color, propietario o correo.
-- Paginación.
+Listado paginado (4 páginas) de vehículos con foto, placa, marca/modelo, año,
+color, foto y nombre del propietario, teléfono (enmascarado), correo y estado
+de autorización.
+- Búsqueda por placa, marca, modelo, color, propietario o correo.
+- Paginación ("Página 1 de 4", con botones Anterior/Siguiente).
 - **Agregar** vehículo + propietario mediante formulario validado.
 - **Editar** vehículo + propietario, precargando los datos actuales.
 - **Eliminar** con modal de confirmación antes de borrar.
+- Badge de estado **Autorizado** por vehículo.
 - Mensajes de éxito/error (toasts), indicadores de carga y botones
   deshabilitados durante las operaciones.
 
 ### Puestos de parqueo
-- Listado en tiempo real del estado de los 80 puestos (columnas A-D).
-- Indicador visual de disponibilidad (Disponible / Ocupado).
+Listado en tiempo real de los 80 puestos, organizados en columnas/secciones
+(A, B, C, D), cada uno con su código (p. ej. `A11`, `B05`), número dentro de
+la sección y una lectura asociada al sensor ultrasónico simulado.
+- Indicador visual de disponibilidad: **DISPONIBLE** (verde) / **OCUPADO** (gris).
+- Actualización automática del estado según la simulación de sensores.
 
 ### Registros de estacionamiento
-- Historial de entradas y salidas por placa, con duración y estado.
+Historial de entradas y salidas por placa, con código de registro (`REG-XXX`),
+fecha/hora de entrada, fecha/hora de salida, duración en minutos y estado.
+- Estado **ACTIVO**: el vehículo sigue estacionado (sin hora de salida ni duración).
+- Estado **FINALIZADO**: muestra hora de salida y la duración total en minutos.
+- Ordenado por fecha, del registro más reciente al más antiguo.
 
 ## Capturas
 
-| Vehículos | Puestos | Registros |
+| Vehículos y propietarios | Puestos | Registros de estacionamiento |
 |---|---|---|
-| ![Vehículos](docs/listado-vehiculos.png) | ![Puestos](docs/listado-puestos.png) | ![Registros](docs/listado-registros.png) |
+| ![Vehículos](docs/vehiculos-propietarios.png) | ![Puestos](docs/puestos.png) | ![Registros](docs/registros-estacionamiento.png) |
 
 | Agregar | Editar | Eliminar |
 |---|---|---|
